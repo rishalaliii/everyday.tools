@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('et:theme')||'dark'}catch(e){}</script>
+<title>QR Code Generator – Free Online | EverydayTools</title>
+<meta name="description" content="Free QR code generator for URLs, text, email, phone numbers, Wi-Fi and contact cards. Preview and download PNG. Runs in your browser.">
+<link rel="canonical" href="https://everydaytools.pages.dev/tools/qr-code-generator/">
+<meta property="og:type" content="website"><meta property="og:title" content="QR Code Generator – Free Online"><meta property="og:description" content="Free QR code generator for URLs, text, email, phone numbers, Wi-Fi and contact cards. Preview and download PNG. Runs in your browser."><meta property="og:url" content="https://everydaytools.pages.dev/tools/qr-code-generator/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="../../assets/img/favicon.png"><link rel="apple-touch-icon" href="../../assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body data-tool="qr-code-generator">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap"><a class="logo" href="../../">Everyday<span>Tools</span></a><div class="hnav"><button id="theme-toggle" type="button">Theme</button><a class="explore" href="../../#tools">Explore tools</a></div></div></header>
+<main id="main" class="wrap">
+<h1>QR Code Generator</h1><p class="mut">QR codes for links, text, email, phone, Wi-Fi and contacts. Download as PNG. Generated in your browser.</p>
+<div id="status" class="status" role="status" aria-live="polite" hidden></div>
+<section class="card"><form id="qr" class="row" style="align-items:end">
+<label>Content type <select data-f="type"><option value="url" selected>Website link</option><option value="text">Plain text</option><option value="email">Email</option><option value="phone">Phone number</option><option value="wifi">Wi-Fi</option><option value="contact">Contact card</option></select></label>
+<div data-t="url" class="row"><label>Web address <input data-f="url" type="text" size="34" placeholder="example.com" inputmode="url"></label></div>
+<div data-t="text" class="row" hidden style="width:100%"><label style="width:100%">Text <textarea data-f="text" rows="3"></textarea></label></div>
+<div data-t="email" class="row" hidden><label>Email address <input data-f="email" type="email" size="24"></label><label>Subject (optional) <input data-f="subject" type="text" size="20"></label><label>Message (optional) <input data-f="body" type="text" size="24"></label></div>
+<div data-t="phone" class="row" hidden><label>Phone number <input data-f="phone" type="text" size="20" placeholder="+91 98765 43210" inputmode="tel"></label></div>
+<div data-t="wifi" class="row" hidden><label>Network name (SSID) <input data-f="ssid" type="text" size="20"></label><label>Password <input data-f="password" type="text" size="20" autocomplete="off"></label><label>Security <select data-f="security"><option value="WPA" selected>WPA/WPA2/WPA3</option><option value="WEP">WEP</option><option value="nopass">None (open)</option></select></label><label><input data-f="hidden" type="checkbox"> Hidden network</label></div>
+<div data-t="contact" class="row" hidden><label>First name <input data-f="first" type="text" size="14"></label><label>Last name <input data-f="last" type="text" size="14"></label><label>Phone <input data-f="phone" type="text" size="16"></label><label>Email <input data-f="email" type="text" size="20"></label><label>Organisation <input data-f="org" type="text" size="16"></label><label>Job title <input data-f="title" type="text" size="14"></label><label>Website <input data-f="url" type="text" size="20"></label><label>Address <input data-f="addr" type="text" size="28"></label></div>
+<div class="row" style="width:100%"><label>Error correction <select data-f="level"><option value="L">L (7%)</option><option value="M" selected>M (15%)</option><option value="Q">Q (25%)</option><option value="H">H (30%)</option></select></label><label>Size <select data-f="size"><option value="256">256 px</option><option value="512" selected>512 px</option><option value="1024">1024 px</option><option value="2048">2048 px</option></select></label><label>Colour <input data-f="fg" type="color" value="#000000"></label><label>Background <input data-f="bg" type="color" value="#ffffff"></label><label><input data-f="quiet" type="checkbox" checked> Quiet-zone margin</label></div></form>
+<div class="row" style="margin:12px 0"><button id="dl" class="primary" type="button" disabled>Download PNG</button><button id="copyimg" type="button" disabled>Copy image</button><button id="copy" type="button" disabled>Copy content as text</button><button id="reset" class="danger" type="button">Reset</button></div>
+<canvas id="qr-canvas" hidden style="max-width:100%;height:auto;image-rendering:pixelated;border:2px solid var(--line)" aria-label="QR code preview"></canvas><p id="qr-info" class="mut"></p></section>
+
+<section aria-labelledby="faq"><h2 id="faq">FAQ</h2><details><summary>Is my data sent anywhere?</summary><p>No. The code is generated in your browser; nothing is uploaded.</p></details><details><summary>Do these QR codes expire?</summary><p>No. They are static: the content is stored in the code itself, so they work as long as the link or data stays valid.</p></details><details><summary>Which error-correction level should I pick?</summary><p>M suits most uses. Choose H if the code may get dirty or have a logo placed over it; higher levels make denser codes.</p></details><details><summary>Will the Wi-Fi code work on every phone?</summary><p>Recent iPhone and Android cameras read it. Always test-scan before printing.</p></details></section>
+<section><h2>Related tools</h2><p><a href="../image-compressor/">Image Compressor</a> · <a href="../images-to-pdf/">Images to PDF</a> · <a href="../favicon-generator/">Favicon Generator</a> · <a href="../../#tools">All tools</a></p></section>
+</main>
+<footer class="site"><div class="wrap">© EverydayTools. Processing happens in your browser. <a href="../../">All tools</a> · <a href="../../about/">About</a> · <a href="../../contact/">Contact</a> · <a href="../../privacy-policy/">Privacy</a> · <a href="../../terms/">Terms</a> · <a href="../../disclaimer/">Disclaimer</a></div><div class="credit"><a href="https://github.com/rishalaliii/everyday.tools" target="_blank" rel="noopener">by Rishal Ali • GitHub</a></div></footer>
+<script type="module" src="../../assets/js/common.js"></script>
+<script type="module" src="../../assets/js/qr-ui.js"></script>
+</body></html>

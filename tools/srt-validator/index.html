@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('et:theme')||'dark'}catch(e){}</script>
+<title>SRT Validator & Error Checker – Free Online | EverydayTools</title>
+<meta name="description" content="Check SRT subtitle files for bad timestamps, overlaps, numbering and long lines. Local processing, nothing uploaded.">
+<link rel="canonical" href="https://everydaytools.pages.dev/tools/srt-validator/">
+<meta property="og:type" content="website"><meta property="og:title" content="SRT Validator & Error Checker"><meta property="og:description" content="Check SRT subtitle files for bad timestamps, overlaps, numbering and long lines. Local processing, nothing uploaded."><meta property="og:url" content="https://everydaytools.pages.dev/tools/srt-validator/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="../../assets/img/favicon.png"><link rel="apple-touch-icon" href="../../assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body data-tool="srt-validator" data-op="validate">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap"><a class="logo" href="../../">Everyday<span>Tools</span></a><div class="hnav"><button id="theme-toggle" type="button">Theme</button><a class="explore" href="../../#tools">Explore tools</a></div></div></header>
+<main id="main" class="wrap">
+<h1>SRT Validator & Error Checker</h1><p class="mut">Find numbering, timing, overlap and formatting errors. Subtitle text and files never leave your browser.</p>
+<div id="status" class="status" role="status" aria-live="polite" hidden></div>
+<section class="card" id="tool"><label>Load a file (read locally, never uploaded) <input id="file" type="file" accept=".srt,.txt,text/plain"></label><label for="in">Subtitles</label><textarea id="in" rows="10" spellcheck="false" placeholder=""></textarea><div class="row"><label>Max characters per line <input id="maxline" type="number" min="10" max="120" value="42" style="width:80px"></label></div>
+<div class="row" style="margin:12px 0"><button id="go" class="primary" type="button">Validate</button><button id="copy" type="button">Copy</button><button id="dl" type="button">Download</button><button id="reset" class="danger" type="button">Reset</button></div>
+<label for="out">Cleaned SRT (when no errors)</label><textarea id="out" rows="10" readonly spellcheck="false"></textarea><ul id="issues" class="issues" aria-live="polite"></ul></section>
+
+<section aria-labelledby="faq"><h2 id="faq">FAQ</h2><details><summary>What counts as an error?</summary><p>Invalid timestamps, end before start, out-of-order cues and unreadable blocks. Overlaps, numbering gaps and long lines are warnings.</p></details></section>
+<section><h2>Related tools</h2><p><a href="../srt-subtitle-editor/">SRT Subtitle Viewer & Editor</a> · <a href="../srt-timestamp-shifter/">SRT Timestamp Shifter</a> · <a href="../srt-formatter/">SRT Subtitle Formatter</a> · <a href="../srt-to-txt-converter/">SRT to TXT Converter</a> · <a href="../txt-to-srt-generator/">TXT to SRT Generator</a></p></section>
+</main>
+<footer class="site"><div class="wrap">© EverydayTools. Processing happens in your browser. <a href="../../">All tools</a> · <a href="../../about/">About</a> · <a href="../../contact/">Contact</a> · <a href="../../privacy-policy/">Privacy</a> · <a href="../../terms/">Terms</a> · <a href="../../disclaimer/">Disclaimer</a></div><div class="credit"><a href="https://github.com/rishalaliii/everyday.tools" target="_blank" rel="noopener">by Rishal Ali • GitHub</a></div></footer>
+<script type="module" src="../../assets/js/common.js"></script>
+<script src="../../assets/js/tool-ui.js"></script>
+<script src="../../assets/js/srt-core.js"></script>
+<script src="../../assets/js/srt-ui.js"></script>
+</body></html>

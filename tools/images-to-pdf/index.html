@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('et:theme')||'dark'}catch(e){}</script>
+<title>Images to PDF – Free Online | EverydayTools</title>
+<meta name="description" content="Free images to PDF converter: combine JPG, PNG and WebP pictures into one PDF with A4, Letter or fit-to-image pages. Runs in your browser.">
+<link rel="canonical" href="https://everydaytools.pages.dev/tools/images-to-pdf/">
+<meta property="og:type" content="website"><meta property="og:title" content="Images to PDF – Free Online"><meta property="og:description" content="Free images to PDF converter: combine JPG, PNG and WebP pictures into one PDF with A4, Letter or fit-to-image pages. Runs in your browser."><meta property="og:url" content="https://everydaytools.pages.dev/tools/images-to-pdf/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="../../assets/img/favicon.png"><link rel="apple-touch-icon" href="../../assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body data-tool="images-to-pdf" data-op="img2pdf">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap"><a class="logo" href="../../">Everyday<span>Tools</span></a><div class="hnav"><button id="theme-toggle" type="button">Theme</button><a class="explore" href="../../#tools">Explore tools</a></div></div></header>
+<main id="main" class="wrap">
+<h1>Images to PDF</h1><p class="mut">Turn JPG, PNG, WebP, GIF or BMP images into a single PDF. Processed in your browser; your files are not uploaded.</p>
+<div id="status" class="status" role="status" aria-live="polite" hidden></div>
+<section class="card"><div id="drop" class="drop"><label for="file">Choose images</label> <input type="file" id="file" accept="image/*,.jpg,.jpeg,.png,.webp,.gif,.bmp" multiple><p class="mut" style="margin:6px 0 0">or drop images here. Add more at any time. Up to 50 files, 100 MB each. Nothing is uploaded.</p></div><p id="count" class="mut" aria-live="polite"></p><ol id="flist" class="flist" aria-label="Selected files"></ol>
+<div id="opts" hidden><div class="row" style="margin-top:8px"><label>Page size <select id="size" data-d="a4"><option value="a4" selected>A4</option><option value="letter">US Letter</option><option value="fit">Same as image</option></select></label><label>Orientation <select id="orient" data-d="auto"><option value="auto" selected>Automatic</option><option value="portrait">Portrait</option><option value="landscape">Landscape</option></select></label><label>Margin <select id="margin" data-d="20"><option value="0">None</option><option value="20" selected>Small</option><option value="40">Medium</option></select></label></div></div>
+<div class="row" style="margin:12px 0"><button id="go" class="primary" type="button" disabled>Create PDF</button><button id="dl" type="button" disabled>Download</button><button id="reset" class="danger" type="button">Reset</button></div>
+<div id="result" class="stats"></div></section>
+
+<section aria-labelledby="faq"><h2 id="faq">FAQ</h2><details><summary>Which images work?</summary><p>JPG and PNG are embedded directly. WebP, GIF (first frame) and BMP are converted in your browser first. HEIC and SVG are not supported.</p></details><details><summary>Will my photos be rotated correctly?</summary><p>Yes. Photos with a camera rotation flag are straightened before they go into the PDF.</p></details><details><summary>Is image quality reduced?</summary><p>JPG and PNG files are embedded without recompression, so quality is kept (rotated JPEGs are re-saved at high quality).</p></details></section>
+<section><h2>Related tools</h2><p><a href="../merge-pdf/">Merge PDF</a> · <a href="../split-pdf/">Split PDF</a> · <a href="../extract-pdf-pages/">Extract PDF Pages</a> · <a href="../rotate-pdf-pages/">Rotate PDF Pages</a> · <a href="../reorder-pdf-pages/">Reorder PDF Pages</a> · <a href="../file-to-pdf/">File to PDF Converter</a> · <a href="../pdf-to-other-formats/">PDF to JPG, PNG or TXT</a> · <a href="../pdf-editor/">Live PDF Editor</a> · <a href="../pdf-to-word/">PDF to Word (DOCX)</a> · <a href="../image-compressor/">Image Compressor</a> · <a href="../image-converter/">Image Converter (JPG, PNG, WebP)</a> · <a href="../../#tools">All tools</a></p></section>
+</main>
+<footer class="site"><div class="wrap">© EverydayTools. Processing happens in your browser. <a href="../../">All tools</a> · <a href="../../about/">About</a> · <a href="../../contact/">Contact</a> · <a href="../../privacy-policy/">Privacy</a> · <a href="../../terms/">Terms</a> · <a href="../../disclaimer/">Disclaimer</a></div><div class="credit"><a href="https://github.com/rishalaliii/everyday.tools" target="_blank" rel="noopener">by Rishal Ali • GitHub</a></div></footer>
+<script type="module" src="../../assets/js/common.js"></script>
+<script type="module" src="../../assets/js/pdf-ui.js"></script>
+</body></html>

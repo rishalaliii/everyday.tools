@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('et:theme')||'dark'}catch(e){}</script>
+<title>Image Compressor – Free Online | EverydayTools</title>
+<meta name="description" content="Free image compressor: reduce JPG, PNG and WebP file size in your browser with a quality slider and before/after sizes. Nothing is uploaded.">
+<link rel="canonical" href="https://everydaytools.pages.dev/tools/image-compressor/">
+<meta property="og:type" content="website"><meta property="og:title" content="Image Compressor – Free Online"><meta property="og:description" content="Free image compressor: reduce JPG, PNG and WebP file size in your browser with a quality slider and before/after sizes. Nothing is uploaded."><meta property="og:url" content="https://everydaytools.pages.dev/tools/image-compressor/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="../../assets/img/favicon.png"><link rel="apple-touch-icon" href="../../assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body data-tool="image-compressor" data-op="compress">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap"><a class="logo" href="../../">Everyday<span>Tools</span></a><div class="hnav"><button id="theme-toggle" type="button">Theme</button><a class="explore" href="../../#tools">Explore tools</a></div></div></header>
+<main id="main" class="wrap">
+<h1>Image Compressor</h1><p class="mut">Make JPG, WebP and PNG files smaller. See before and after sizes. Processed in your browser; your image is not uploaded.</p>
+<div id="status" class="status" role="status" aria-live="polite" hidden></div>
+<section class="card"><div id="drop" class="drop"><label for="file">Choose an image</label> <input type="file" id="file" accept="image/*"><p class="mut" style="margin:6px 0 0">or drop it here. JPG, PNG, WebP, GIF or BMP, up to 50 MB. Nothing is uploaded.</p></div>
+<div id="opts" hidden><div class="row"><label>Output format <select data-f="fmt"><option value="same" selected>Same as original</option><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WebP</option></select></label><label>Quality <input data-f="q" type="range" min="1" max="100" value="75"> <b id="qv">75</b>%</label><label>Max width (px, optional) <input data-f="maxw" type="number" inputmode="numeric" min="0" step="1" style="width:110px"></label></div></div>
+<div class="row" style="margin:12px 0"><button id="dl" class="primary" type="button" disabled>Download</button><button id="reset" class="danger" type="button">Reset</button></div>
+<div id="info" class="stats"></div>
+<div class="cmp"><figure id="before-box" hidden><figcaption>Original</figcaption><div id="before" class="pv"></div></figure><figure><figcaption>Result</figcaption><div id="after" class="pv"></div></figure></div></section>
+
+<section aria-labelledby="faq"><h2 id="faq">FAQ</h2><details><summary>Are my images uploaded?</summary><p>No. Compression happens in your browser, so the file never leaves your device.</p></details><details><summary>Why is my PNG not smaller?</summary><p>PNG is lossless and ignores the quality slider. Choose JPG or WebP, or set a maximum width.</p></details><details><summary>Is transparency kept?</summary><p>In PNG and WebP, yes. JPG has no transparency, so transparent areas become white.</p></details></section>
+<section><h2>Related tools</h2><p><a href="../qr-code-generator/">QR Code Generator</a> · <a href="../image-resizer/">Image Resizer</a> · <a href="../image-cropper/">Image Cropper</a> · <a href="../image-converter/">Image Converter (JPG, PNG, WebP)</a> · <a href="../favicon-generator/">Favicon Generator</a> · <a href="../images-to-pdf/">Images to PDF</a> · <a href="../../#tools">All tools</a></p></section>
+</main>
+<footer class="site"><div class="wrap">© EverydayTools. Processing happens in your browser. <a href="../../">All tools</a> · <a href="../../about/">About</a> · <a href="../../contact/">Contact</a> · <a href="../../privacy-policy/">Privacy</a> · <a href="../../terms/">Terms</a> · <a href="../../disclaimer/">Disclaimer</a></div><div class="credit"><a href="https://github.com/rishalaliii/everyday.tools" target="_blank" rel="noopener">by Rishal Ali • GitHub</a></div></footer>
+<script type="module" src="../../assets/js/common.js"></script>
+<script type="module" src="../../assets/js/img-ui.js"></script>
+</body></html>

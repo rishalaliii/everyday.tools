@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('et:theme')||'dark'}catch(e){}</script>
+<title>TXT to SRT Generator – Free Online | EverydayTools</title>
+<meta name="description" content="Generate an SRT subtitle file from plain text using reading speed or fixed durations. Local, free.">
+<link rel="canonical" href="https://everydaytools.pages.dev/tools/txt-to-srt-generator/">
+<meta property="og:type" content="website"><meta property="og:title" content="TXT to SRT Generator"><meta property="og:description" content="Generate an SRT subtitle file from plain text using reading speed or fixed durations. Local, free."><meta property="og:url" content="https://everydaytools.pages.dev/tools/txt-to-srt-generator/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="../../assets/img/favicon.png"><link rel="apple-touch-icon" href="../../assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body data-tool="txt-to-srt-generator" data-op="txt2srt">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap"><a class="logo" href="../../">Everyday<span>Tools</span></a><div class="hnav"><button id="theme-toggle" type="button">Theme</button><a class="explore" href="../../#tools">Explore tools</a></div></div></header>
+<main id="main" class="wrap">
+<h1>TXT to SRT Generator</h1><p class="mut">Turn text into SRT with automatic or fixed timing. Subtitle text and files never leave your browser.</p>
+<div id="status" class="status" role="status" aria-live="polite" hidden></div>
+<section class="card" id="tool"><label>Load a file (read locally, never uploaded) <input id="file" type="file" accept=".txt,text/plain"></label><label for="in">Text</label><textarea id="in" rows="10" spellcheck="false" placeholder="One subtitle per line…"></textarea><div class="row"><label>Split by <select id="mode"><option value="line">line</option><option value="paragraph">paragraph</option><option value="sentence">sentence</option></select></label><label>Start at <input id="start" type="number" min="0" step="0.1" value="0" style="width:80px"> s</label><label>Gap <input id="gap" type="number" min="0" step="0.05" value="0.1" style="width:80px"> s</label></div><div class="row" style="margin-top:8px"><label>Reading speed <input id="cps" type="number" min="5" max="40" value="15" style="width:80px"> chars/s</label><label><input type="checkbox" id="fixed"> Use fixed duration</label><label><input id="fixedsecs" type="number" min="0.5" step="0.1" value="3" style="width:80px"> s per cue</label></div>
+<div class="row" style="margin:12px 0"><button id="go" class="primary" type="button">Generate</button><button id="copy" type="button">Copy</button><button id="dl" type="button">Download</button><button id="reset" class="danger" type="button">Reset</button></div>
+<label for="out">Generated SRT</label><textarea id="out" rows="10" readonly spellcheck="false"></textarea></section>
+
+<section aria-labelledby="faq"><h2 id="faq">FAQ</h2><details><summary>How are durations decided?</summary><p>From text length at your reading speed (1 to 7 seconds per cue), unless you choose a fixed duration. They are estimates, so review before publishing.</p></details></section>
+<section><h2>Related tools</h2><p><a href="../srt-subtitle-editor/">SRT Subtitle Viewer & Editor</a> · <a href="../srt-validator/">SRT Validator & Error Checker</a> · <a href="../srt-timestamp-shifter/">SRT Timestamp Shifter</a> · <a href="../srt-formatter/">SRT Subtitle Formatter</a> · <a href="../srt-to-txt-converter/">SRT to TXT Converter</a></p></section>
+</main>
+<footer class="site"><div class="wrap">© EverydayTools. Processing happens in your browser. <a href="../../">All tools</a> · <a href="../../about/">About</a> · <a href="../../contact/">Contact</a> · <a href="../../privacy-policy/">Privacy</a> · <a href="../../terms/">Terms</a> · <a href="../../disclaimer/">Disclaimer</a></div><div class="credit"><a href="https://github.com/rishalaliii/everyday.tools" target="_blank" rel="noopener">by Rishal Ali • GitHub</a></div></footer>
+<script type="module" src="../../assets/js/common.js"></script>
+<script src="../../assets/js/tool-ui.js"></script>
+<script src="../../assets/js/srt-core.js"></script>
+<script src="../../assets/js/srt-ui.js"></script>
+</body></html>
